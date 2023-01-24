@@ -784,6 +784,14 @@ footer span a:hover {
     }
 }
 
+@media (min-width: 576px) {
+    .about .about-content .right .text {
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
+
 /* Device Media  */
 @media (max-width: 500px) {
     .home .home-content .text-2 {
