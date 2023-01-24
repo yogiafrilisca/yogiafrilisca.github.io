@@ -667,13 +667,13 @@ footer span a:hover {
 
 }
 
-.skills .skills-content .column {
+.skills .skills-content .left .text {
     width: calc(50% - 30px);
     text-align: center;
 
 }
 
-.contact .contact-content .text {
+.contact .contact-content .left .text {
     text-align: center;
 }
 
