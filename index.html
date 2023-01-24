@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Yogi Afrilisca</title>
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
     <link rel="shorcut icon" href="../assets/images/logo.png">
     
@@ -28,10 +28,16 @@
 <!-- untuk mematikan ctrl+u -->
 <body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;' ondragstart='return false;' onselectstart='return false;' >
 
-    
+
+    <div id="preloader "></div>
+
+    <!-- Scroll Up -->
     <div class="scroll-up-btn">
        <i class="fa-solid fa-angles-up"></i>
     </div>
+    <!-- Akhir Scroll Up -->
+
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Yogi<span> Afrilisca</span></a></div>
@@ -48,8 +54,9 @@
             </div>
         </div>
     </nav>
+    <!-- Akhir Navbar -->
 
-    <!-- home section start -->
+    <!-- Home section start -->
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
@@ -60,8 +67,9 @@
             </div>
         </div>
     </section>
+    <!-- Akhir Home section  -->
 
-    <!-- about section start -->
+    <!-- About section start -->
     <section class="about" id="about">
         <div class="max-width">
             <h2 class="title">About me</h2>
@@ -73,17 +81,18 @@
                 <div class="column right">
                     <div class="text">I'm Yogi and I'm a <span class="typing-2"></span></div>
                     <p>Halo. Perkenalkan nama saya Yogi Afrilisca, saya lahir pada tanggal 18 April 2002. Saya berasal dari Rantau Makmur tetapi sekarang saya tinggal di Muara Bungo, Jambi dan kuliah di UMMUBA. Alamat saya di Jalan Sapta Marga, Sungai Pinang, Muara Bungo. 
-                        Saat ini saya sedang duduk di semester 5, Prodi Pendidikan Teknologi Informasi di UMMUBA. Saya memiliki ketertarikan yang tinggi di Bidang 
-                        Pemrograman, Desain Grafis dan Game. Semoga saya bisa menjadi seorang yang dapat menghasilkan karya yang luar biasa. Itu saja dari saya. 
-                        Terima kasih atas perhatiannya.
-</p>
+                    Saat ini saya sedang duduk di semester 5, Prodi Pendidikan Teknologi Informasi di UMMUBA. Saya memiliki ketertarikan yang tinggi di Bidang 
+                    Pemrograman, Desain Grafis dan Game. Semoga saya bisa menjadi seorang yang dapat menghasilkan karya yang luar biasa. Itu saja dari saya. 
+                    Terima kasih atas perhatiannya.</p>
                     <a href="#">    <i class="fa-solid fa-download"></i>  Download CV</a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Akhir About section -->
 
-    <!-- services section start -->
+
+    <!-- Services section start -->
     <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">My Services</h2>
@@ -113,8 +122,9 @@
             </div>
         </div>
     </section>
+    <!-- Akhir Services section  -->
 
-    <!-- skills section start -->
+    <!-- Skills section start -->
     <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">My skills</h2>
@@ -164,8 +174,10 @@
             </div>
         </div>
     </section>
+    <!-- Akhir Skills section  -->
 
-    <!-- teams section start -->
+
+    <!-- Teams section start -->
     <section class="teams" id="teams">
         <div class="max-width">
             <h2 class="title">My teams</h2>
@@ -208,8 +220,10 @@
             </div>
         </div>
     </section>
+    <!-- Akhir Teams section  -->
 
-    <!-- contact section start -->
+
+    <!-- Contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
             <h2 class="title">Contact me</h2>
@@ -274,11 +288,21 @@
             </div>
         </div>
     </section>
+    <!-- Akhir Contact section  -->
 
-    <!-- footer section start -->
+
+    <!-- Footer section start -->
     <footer>
         <span>Created By <a href="#">Yogi Afrilisca</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
     </footer>
+    <!-- Akhir Footer section  -->
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
 
     <script src="../assets/js/script.js"></script>
 </body>
