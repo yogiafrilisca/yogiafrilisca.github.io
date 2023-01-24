@@ -256,8 +256,6 @@ section .title::after {
     content: "who i am";
 }
 
-
-
 .about .about-content .left {
     width: 45%;
 }
@@ -266,7 +264,7 @@ section .title::after {
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 30px;
 }
 
 .about .about-content .right {
@@ -659,32 +657,37 @@ footer span a:hover {
     text-decoration: underline;
 }
 
-
-/* responsive media query start */
-@media (max-width: 1300px) {
-    .home .max-width {
-        margin-left: 0px;
-    }
-}
-
-@media (max-width: 1104px) {
-    .about .about-content .left img {
-        height: 350px;
-        width: 350px;
-    }
-}
-
-@media (max-width: 991px) {
-    .max-width {
-        padding: 0 50px;
-    }
-}
-
+/* Small devices (landscape phones, 576px and up) */
 @media (max-width: 947px) {
     .menu-btn {
         display: block;
         z-index: 999;
     }
+
+
+    /* Medium devices (tablets, 768px and up) */
+    @media (max-width: 991px) {
+        .max-width {
+            padding: 0 50px;
+        }
+    }
+
+    /* Large devices (desktops, 992px and up) */
+    @media (max-width: 1104px) {
+        .about .about-content .left img {
+            height: 350px;
+            width: 350px;
+        }
+    }
+
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (max-width: 1300px) {
+        .home .max-width {
+            margin-left: 0px;
+        }
+    }
+
+
 
     .menu-btn i.active:before {
         content: "\f00d";
@@ -781,6 +784,7 @@ footer span a:hover {
     }
 }
 
+/* Device Media  */
 @media (max-width: 500px) {
     .home .home-content .text-2 {
         font-size: 50px;
@@ -790,7 +794,11 @@ footer span a:hover {
         font-size: 27px;
     }
 
-    .about .about-content .right .text,
+    .about .about-content .right .text {
+        font-size: 20px;
+        text-align: center;
+    }
+
     .skills .skills-content .left .text {
         font-size: 19px;
     }
@@ -813,3 +821,5 @@ footer span a:hover {
         line-height: 38px;
     }
 }
+
+/* Akhir Device Media */
