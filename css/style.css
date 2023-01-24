@@ -367,6 +367,7 @@ section .title::after {
 
 .skills .skills-content .column {
     width: calc(50% - 30px);
+
 }
 
 .skills .skills-content .left .text {
@@ -658,11 +659,41 @@ footer span a:hover {
 }
 
 /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .about .about-content .right .text {
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+    text-align: center;
+
+}
+
+.contact .contact-content .text {
+    text-align: center;
+}
+
+/* Akhir Small devices (landscape phones, 576px and up) */
+
+
+/* Small devices (landscape phones, 947px and up) */
 @media (max-width: 947px) {
     .menu-btn {
         display: block;
         z-index: 999;
     }
+
+    .skills .skills-content .column {
+        width: calc(50% - 30px);
+        text-align: center;
+
+    }
+
+    /* Akhir Small devices (landscape phones, 947px and up) */
 
 
     /* Medium devices (tablets, 768px and up) */
@@ -686,8 +717,6 @@ footer span a:hover {
             margin-left: 0px;
         }
     }
-
-
 
     .menu-btn i.active:before {
         content: "\f00d";
@@ -784,13 +813,7 @@ footer span a:hover {
     }
 }
 
-@media (min-width: 576px) {
-    .about .about-content .right .text {
-        font-size: 20px;
-        text-align: center;
-    }
 
-}
 
 /* Device Media  */
 @media (max-width: 500px) {
